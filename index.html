@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GabrielKlark</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Press+Start+2P&family=Roboto&family=Source+Code+Pro&family=Sriracha&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3b3a3f1bf7.js" crossorigin="anonymous"></script>
+  
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+  
+  </head>
+<body>
+  <!-- Código que carrega SwiperJS -->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- Código que carrega arquivos JavaScript -->
+  <script src="./scripts.js"></script>
+    <header id="homePage">
+        <nav class="menu">
+          <ul>
+            <li><a href="#homePage"><i class="fas fa-home"></i></a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Hobbies</a></li>
+            <li><a href="#contato">Contact</a></li>
+          </ul>
+        </nav>
+        <div id="mynameid" class="myname typing-container">
+          <span id="siteTitle" class="site-title">Gabriel Klark</span>
+          <!--<h1 id="siteSubtitle" class="site-subtitle">Jr. Developer</h2>-->
+          <span class="input-cursor"></span>
+        </div>
+    </header>
+    <script>
+      setInterval(function(){ 
+        function typeWriter(element) {
+        const textArray = element.innerHTML.split('');
+        element.innerHTML = '';
+        textArray.forEach((letter, i) => {
+          setTimeout(() => element.innerHTML += letter, 150 * i);
+        });
+        }
+        const title = document.querySelector('#siteTitle');
+        typeWriter(title);
+      }, 3000);
+    </script>
+
+    <section class="aboutMe" id="about">
+
+      <h2 class="aboutTitle">Sobre mim...</h2>
+
+      <figure class="figMine">
+        <img class="img-about" src="./img/Me.jpg" alt="GabrielKlark">
+      </figure>
+
+      <p>Meu nome é Gabriel Vinícius, porém sou mais conhecido como Klark (Criei esse apelido por Gabriel ser um nome comum, tanto que estou em uma turma com 6 Gabrieis na ETEC.</p>
+      <p>Por falar nisso, sou estudante da Etec de Guarulhos, o que me possibilitou cursar o ensino médio acoplado ao técnico em desenvolvimento de sistemas. Sou muito grato a ETEC por me ajudar a descobrir minha maior paixão: a programação! </p>
+      <p>Site criado com muito orgulho por um aluno da <a target="_blank" href="https://www.alura.com.br/imersao-css">#ImersãoHipster.CSS  da Alura</a> ;)</p>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <h2>Projetos</h2>
+
+      <!-- Swiper -->
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="portfolioCard card1">
+              <img class="portfolioImage" src="img/woberta.png" alt="s8">
+              <h2>Jogo Point 'n' Click Mobile</h2>
+              <p>Esse é um jogo de terror que desenvolvi em App Inventor como projeto escolar. Ele possuí 10 leveis e conta com sistema de cadastro de jogadores, que utiliza PHP para acessar o servidor do banco de dados, esse desenvolvido em SQL. </p>
+              <a href="https://youtu.be/ojyVgGEjoa4" target="_blank" rel="noopener noreferrer">Trailer do Jogo no Youtube</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="portfolioCard card1">
+              <img class="portfolioImage" src="img/mym.png" alt="s8">
+              <h2>MyM - My Media</h2>
+              <p>My Media é um programa responsivo desenvolvido em C# para que os usuários possam cadastrar filmes e séries que assistiram. Conta com tela de login e cadastro além de tela de relatório, em que o usuário recebe um relatório do Crystal Report.</p>
+              <a href="https://youtu.be/8HIOwGKA8LI" target="_blank" rel="noopener noreferrer">Vídeo do Projeto no Youtube</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="portfolioCard card1">
+              <img class="portfolioImage" src="img/portal.png" alt="s8">
+              <h2>Portal Verde Em Chamas</h2>
+              <p>Site desenvolvido na semana de "TI Verde" para alertar sobre as queimadas que era um assunto em alta na época. Não é responsivo, mas é como se fosse um blog de reportagens. </p>
+              <a href="https://youtu.be/-9xYtJTJk_U" target="_blank" rel="noopener noreferrer">Vídeo do Projeto no Youtube</a>
+            </div>
+          </div>
+          <!--
+          <div class="swiper-slide">
+            <div class="portfolioCard card1">
+              <img class="portfolioImage" src="https://i.pinimg.com/originals/8d/44/8c/8d448cb94ff799923db0b160a3daab88.gif" alt="s8">
+              <h2>Project Name</h2>
+              <p>Project Descrition: Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio praesentium ea pariatur neque nesciunt ipsam unde adipisci, ut ipsum, ab dolorem commodi? Accusantium corporis laboriosam quisquam qui natus facilis molestiae.</p>
+              <a href="http://youtube.com" target="_blank" rel="noopener noreferrer">Vídeo do Projeto no Youtube</a>
+            </div>
+          </div>
+          -->
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+
+
+      <!-- Initialize Swiper -->
+      <script type="module">
+        var swiper = new Swiper('.swiper', {
+          pagination: {
+            el: '.swiper-pagination',
+            type: 'progressbar',
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          autoplay: {
+            delay: 6000,
+            disableOnInteraction: true,
+          },
+          loop: true,
+        });
+      </script>
+      
+      <!--
+      <div class="grid">
+        
+        <div class="card">
+          <figure class="cardFV">
+            <img class="img-portfolio" src="./img/Programar.jpg" alt="jr.Developer">
+            <figcaption>jr.Developer</figcaption>
+          </figure>
+        </div>
+
+        <div class="card">
+          <figure class="cardFV">
+            <img class="img-portfolio" src="./img/Planet Coaster.jpg" alt="Park Builder">
+            <figcaption>Park Builder</figcaption>
+          </figure>
+        </div>
+
+        <div class="card">
+          <figure class="cardFV">
+            <img class="img-portfolio" src="./img/Dançar.png" alt="Dancer">
+            <figcaption>Dancer</figcaption>
+          </figure>
+        </div>
+
+        <div class="card">
+          <figure class="cardFV">
+            <img class="img-portfolio" src="./img/himym.jpg" alt="How I Met Your Mother">
+            <figcaption>Suit up!</figcaption>
+          </figure>
+        </div>
+
+      </div>
+      -->
+      
+    </section>
+    
+    <section class="contato" id="contato">
+      <h2>Contato</h2>
+      <p>Se desejar entrar em contato comigo, utilize algum dos métodos abaixo =D</p>
+      <div class="grid icons">
+        <a target="_blank" href="https://instagram.com/gabrielzklark">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a target="_blank" href="https://github.com/GabrielKlark">
+          <i class="fab fa-github"></i>
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/gabriel-barboza-706819205">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a target="_blank" href="https://codepen.io/GabrielKlark">
+          <i class="fab fa-codepen"></i>
+        </a>
+        <a href="mailto:gabrielrochabarboza@gmail.com">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </section>
+</body>
+</html>

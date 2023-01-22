@@ -16,12 +16,12 @@ body{
   color: #f4f4f4;
   font-family: 'Source Code Pro', monospace;
   height: 100vh;
-  font-size: 14px;
+  font-size: 12px;
 }
   
   @media (min-width: 200px) {
     body{
-      font-size: 14px;
+      font-size: 12px;
     }
     .img-portfolio {
       width: 16em;
@@ -31,13 +31,13 @@ body{
 
   @media (min-width: 500px) {
   body{
-    font-size: 18px;
+    font-size: 14px;
   }
   }
 
  @media (min-width: 700px) {
   body{
-    font-size: 22px;
+    font-size: 18px;
   }
  }
 
@@ -114,6 +114,7 @@ body{
     text-align: center;
     font-size: 2.8em;
     font-family: 'Press Start 2P', cursive;
+    text-shadow: 2px 2px 2px #03002b;
   }
   .site-subtitle {
     text-align: center;
@@ -237,12 +238,12 @@ body{
   }
   @media (min-width: 1300px) {
     body {
-      font-size: 26px;
+      font-size: 20px;
     }
   }
   @media (min-width: 1700px) {
     body {
-      font-size: 32px;
+      font-size: 26px;
     }
     .portfolio .grid {
       justify-content: space-evenly;

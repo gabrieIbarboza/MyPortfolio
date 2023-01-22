@@ -15,9 +15,6 @@
   
   </head>
 <body>
-  <!-- Código que carrega SwiperJS -->
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-
   <header id="homePage">
       <nav class="menu">
         <ul>
@@ -31,7 +28,12 @@
         <span id="siteTitle" class="site-title">Gabriel Klark</span>
         <!--<h1 id="siteSubtitle" class="site-subtitle">Jr. Developer</h2>-->
         <span class="input-cursor"></span>
+
+        <br />
+        <a id="cv-button" href="assets/docs/GabrielBarboza2023.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+  
       </div>
+
   </header>
 
   <section class="aboutMe" id="about">
@@ -102,27 +104,6 @@
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
     </div>
-
-
-
-    <!-- Initialize Swiper -->
-    <script type="module">
-      var swiper = new Swiper('.swiper', {
-        pagination: {
-          el: '.swiper-pagination',
-          type: 'progressbar',
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        autoplay: {
-          delay: 6000,
-          disableOnInteraction: true,
-        },
-        loop: true,
-      });
-    </script>
     
     <!--
     <div class="grid">
@@ -163,7 +144,10 @@
   <footer class="contato" id="contato">
     <div class="footer-content">
       <h2>Contato</h2>
-      <p>Se deseja entrar em contato comigo, utilize algum dos métodos abaixo =D</p>
+      <p>Se deseja entrar em contato comigo, utilize algum dos métodos abaixo ou veja meu currículo =D</p>
+
+      <a id="cv-button" href="assets/docs/GabrielBarboza2023.pdf" target="_blank" rel="noopener noreferrer">Ver CV</a>
+
       <div class="grid icons">
         <a target="_blank" href="https://instagram.com/gabrielzklark">
           <i class="fab fa-instagram"></i>
@@ -186,5 +170,8 @@
 
   <!-- Código que carrega arquivos JavaScript -->
   <script src="./scripts.js"></script>
+  <!-- Código que carrega SwiperJS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./swiper.js" type="module"></script>
 </body>
 </html>

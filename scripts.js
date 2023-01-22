@@ -3,7 +3,9 @@
 
     setInterval(()=>{ 
 
-        function typeWriter(element) {
+        function typeWriter(element, firsttext) {
+
+            element.innerHTML = firsttext; //Avoids a bug where letters scramble
             const textArray = (element.innerHTML.split(''));
             element.innerHTML = '';
             setTimeout(()=>{
@@ -16,7 +18,7 @@
         }
 
         const title = document.querySelector('#siteTitle');
-        typeWriter(title);
+        typeWriter(title, 'Gabriel Klark');
 
     }, 3000);
 

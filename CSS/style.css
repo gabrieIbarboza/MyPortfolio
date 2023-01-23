@@ -116,6 +116,11 @@ body{
     font-family: 'Press Start 2P', cursive;
     text-shadow: 2px 2px 2px #03002b;
   }
+  @media (min-width: 500px) {
+    .site-title {
+      font-size: 2em;
+    }
+   }
   .site-subtitle {
     text-align: center;
     font-style: italic;

@@ -18,7 +18,7 @@
         }
 
         const title = document.querySelector('#siteTitle');
-        typeWriter(title, 'Gabriel Klark');
+        typeWriter(title, 'Gabriel Barboza');
 
     }, 3000);
 

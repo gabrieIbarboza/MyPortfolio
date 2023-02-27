@@ -46,6 +46,7 @@ body{
     display: flex;
     height: 100vh;
     justify-content: center;
+    text-align: center;
   }
 
   .menu {
@@ -312,6 +313,11 @@ body{
     margin: 10px auto;
     text-align: center;
     width: 61vw;
+  }
+
+  .portfolioCard--links {
+    display: flex;
+    flex-direction: column;
   }
 
   .portfolioCard a {

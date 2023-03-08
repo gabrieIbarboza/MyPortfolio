@@ -55,6 +55,8 @@ body{
     width: 100vw;
     top: 0px;
     z-index: 100;
+
+    animation: linear 6s showAfterTitleAnimation;
   }
   .menu ul {
     display: flex;
@@ -110,7 +112,6 @@ body{
   }
   /*Title Animation*/
 
-
   .site-title {
     text-align: center;
     font-size: 2.8em;
@@ -143,6 +144,20 @@ body{
     40% {opacity: 1;}
     60% {opacity: 0;}
     100% {opacity: 0;}
+  }
+  #cv-button {
+    animation: linear 6s showAfterTitleAnimation;
+  }
+  @keyframes showAfterTitleAnimation {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
   
   .portfolio {

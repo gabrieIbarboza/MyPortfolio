@@ -288,6 +288,7 @@ body{
 
   .portfolioCard {
     padding: 10px;
+    height: 800px;
   }
 
   .portfolioCard img {
@@ -315,7 +316,7 @@ body{
     width: 61vw;
   }
 
-  .portfolioCard--links {
+  .portfolioCard__links {
     display: flex;
     flex-direction: column;
   }
@@ -323,6 +324,24 @@ body{
   .portfolioCard a {
     color: inherit;
     font-family: 'Source Code Pro', monospace;
+  }
+
+  .portfolioCard__tags {
+    align-items: center;
+    display: inline-block;
+    justify-content: center;
+    line-height: 2em;
+    margin: 20px 0;
+  }
+  .portfolioCard__tag {
+    background-color: #003464;
+    border-radius: 10px;
+    padding: 5px;
+    white-space: nowrap;
+  }
+  .portfolioCard__tag::before {
+    content: "# ";
+    font-size: .8em;
   }
 
 

@@ -216,6 +216,10 @@ body{
     text-align: justify;
     text-indent: 3em;
   }
+  .aboutMe p span {
+    color: #ffd700;
+    font-weight: bold;
+  }
   .aboutMe a {
     color: #00c3ff;
     transition: 500ms;

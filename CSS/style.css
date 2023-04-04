@@ -390,16 +390,11 @@ body{
     text-shadow: none;
   }
   .contato a {
-    color: #f5f5f5;
-    font-size: 2em;
-    text-decoration: none;
     transition: all 2s;
   }
   .contato a:active,
   .contato a:hover {
-    text-decoration: none;
-    text-shadow: 0px 0px 10px #00c3ff;
-    transition: all 500ms;
+    box-shadow: 0px 0px 10px #f5f5f5;
   }
   .contato .icons {
     text-align: center;

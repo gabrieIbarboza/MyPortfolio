@@ -1,6 +1,4 @@
 (()=>{
-    console.log('It is working!');
-
     setInterval(()=>{ 
 
         function typeWriter(element, firsttext) {
